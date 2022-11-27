@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- linkowanie kodu CSS -->
+  <link rel="stylesheet" type="text/css" href="login.css" />
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+</head>
+
+<body>
+    <main id="main-holder">
+        <div id="background">
+        <h1 id="login-header">Login</h1>
+        <!-- Formularz, który pobiera dane logowania od uzytkownika. Dane z formularza pobierane są przez login.js-->
+        <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <input type="submit" value="Login" id="login-form-submit">
+        </form>
+
+        <!-- Div odpowiedzialny za wyświetlanie błędów-->
+        <div id="login-error-msg">Access Denied!</div>
+
+    </main>
+    </div>
+    <!-- załączenie skryptu js do pobrania danych z formularza i sprawdzenia poprawności-->
+    <script src="login.js"></script>
+
+</body>
+</html>
